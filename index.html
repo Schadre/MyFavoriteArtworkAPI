@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="Description" content="Enter your description here"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+<link rel="stylesheet" href="main.css">
+<script src="main.js"></script>
+<title>Art</title>
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 fixed-top shadow-lg">
+        <div class="container">
+            <a href="#" class="navbar-brand">For the love of Art</a>
+            <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navmenu"
+            ><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="#blackmirror" class="nav-link">Espejo Negro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#manymansions" class="nav-link">Many Mansions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#nightlife" class="nav-link">Nightlife</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#room" class="nav-link">The Room No. VI</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#opo" class="nav-link">Veranda Post</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#weaving" class="nav-link">Weaving</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <!--Start of Container For Artwork-->
+    <div class="container">
+        <div class="gallery">
+            <br>
+            <figure class="gallery__item gallery__item--1" id="blackmirror" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <img class="gallery__img shadow-lg" src="images/black-mirror.jpeg" alt="126414">
+            </figure>
+                <br>
+            <figure class="gallery__item gallery__item--2" id="manymansions" onclick="event.stopPropagation(); getArt(this.id, event)" >
+                <img class="gallery__img shadow-lg" src="/images/many-mansions.jpeg" alt="137125">
+            </figure>
+                <br>
+            <figure class="gallery__item gallery__item--3" id="nightlife" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <img class="gallery__img shadow-lg" src="images/nightlife.jpeg" alt="117266">
+            </figure>
+                <br>
+            <figure class="gallery__item gallery__item--4" id="room" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <img class="gallery__img shadow-lg" src="images/the-room-no-vi.jpeg" alt="191556">
+            </figure>
+                <br>
+            <figure class="gallery__item gallery__item--5" id="opo" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <img class="gallery__img shadow-lg" src="images/veranda-post-opo-ogoga.jpeg" alt="102611">
+            </figure>
+                <br>
+            <figure class="gallery__item gallery__item--6" id="weaving" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <img class="gallery__img shadow-lg" src="images/weaving.jpeg" alt="151363">
+            </figure>
+        </div>
+    </div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+</html>
